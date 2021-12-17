@@ -10,7 +10,7 @@ package org.oewntk.grind.wndb2wndb;
  * @author Bernard Bou
  * @see "https://wordnet.princeton.edu/documentation/wndb5wn"
  */
-public class Grinder
+public class Grind
 {
 	/**
 	 * Main entry point
