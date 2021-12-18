@@ -96,7 +96,7 @@ public class Grind
 
 		// Consume model
 		Tracing.progress("before model is consumed,", startTime);
-		new ModelConsumer(outDir, flags[0], Tracing.psInfo).grind(model);
+		new ModelConsumer(outDir, flags[0], Tracing.psInfo).accept(model);
 		Tracing.progress("after model is consumed,", startTime);
 
 		// End
