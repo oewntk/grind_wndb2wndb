@@ -11,6 +11,7 @@ import org.oewntk.wndb.out.ModelConsumer;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * Main class that generates the WN database in the WNDB format from WNDB format, as per wndb(5WN)
@@ -91,7 +92,7 @@ public class Grind
 		// Supply model
 		Tracing.progress("before model is supplied,", startTime);
 		Model model = new Factory(inDir, inDir2).get();
-		//Tracing.psInfo.printf("[Model] %s\n%s%n", Arrays.toString(model.getSources()), model.info());
+		Tracing.psInfo.printf("[Model] %s\n%s%n", Arrays.toString(model.getSources()), model.info());
 		Tracing.progress("after model is supplied,", startTime);
 
 		// Consume model
