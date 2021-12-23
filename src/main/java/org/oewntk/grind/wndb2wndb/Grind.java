@@ -95,6 +95,34 @@ public class Grind
 		//Tracing.psInfo.printf("[Model] %s%n%s%n%n", Arrays.toString(model.getSources()), model.info());
 		Tracing.progress("after model is supplied,", startTime);
 
+		// TODO
+
+		System.err.println("scan synsets for '11000411-n'");
+		model.synsets.stream().filter(synset->"11000411-n".equals(synset.getSynsetId())).forEach(System.err::println);
+
+		System.err.println("scan synsets for '10000655-n'");
+		model.synsets.stream().filter(synset->"10000655-n".equals(synset.getSynsetId())).forEach(System.err::println);
+
+		System.err.println("from map get lemma '11000411-n'");
+		System.err.println(model.getSynsetsById().get("11000411-n"));
+
+		System.err.println("from map get lemma '10000655-n'");
+		System.err.println(model.getSynsetsById().get("10000655-n"));
+
+		System.err.println("scan lexes for 'casanova'");
+		model.lexes.stream().filter(lex->"casanova".equals(lex.getLCLemma())).forEach(System.err::println);
+
+		System.err.println("scan lexes for 'Casanova'");
+		model.lexes.stream().filter(lex->"Casanova".equals(lex.getLemma())).forEach(System.err::println);
+
+		System.err.println("from map get lemma 'Casanova'");
+		model.getLexesByLemma().get("Casanova").forEach(System.err::println);
+
+		System.err.println("from map get lclemma 'casanova'");
+		model.getLexesByLCLemma().get("casanova").forEach(System.err::println);
+
+		//
+
 		// Consume model
 		Tracing.progress("before model is consumed,", startTime);
 		new ModelConsumer(outDir, flags[0]).accept(model);
