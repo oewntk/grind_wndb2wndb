@@ -10,8 +10,6 @@ import org.oewntk.wndb.out.Flags;
 import org.oewntk.wndb.out.ModelConsumer;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * Main class that generates the WN database in the WNDB format from WNDB format, as per wndb(5WN)
@@ -62,9 +60,8 @@ public class Grind
 	 * Main entry point
 	 *
 	 * @param args command-line arguments [-compat:lexid] [-compat:pointer] yamlDir [outputDir]
-	 * @throws IOException io
 	 */
-	public static void main(String[] args) throws IOException
+	public static void main(String[] args)
 	{
 		int[] flags = flags(args);
 		int iArg = flags[1];
