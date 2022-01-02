@@ -9,15 +9,15 @@
 
 This library reads a model from WNDB files and writes it to WNDB format.
 
-Project [grind_wndb2wndb](https://github.com/x-englishwordnet/grind_wndb2wndb)
+Project [grind_wndb2wndb](https://github.com/oewntk/grind_wndb2wndb)
 
-See also [model](https://github.com/x-englishwordnet/model/blob/master/README.md).
+See also [model](https://github.com/oewntk/model/blob/master/README.md).
 
-See also [fromwndb](https://github.com/x-englishwordnet/fromwndb/blob/master/README.md).
+See also [fromwndb](https://github.com/oewntk/fromwndb/blob/master/README.md).
 
-See also [towndb](https://github.com/x-englishwordnet/towndb/blob/master/README.md).
+See also [towndb](https://github.com/oewntk/towndb/blob/master/README.md).
 
-See also [x-englishwordnet](https://github.com/x-englishwordnet) and [globalwordnet/english-wordnet](https://github.com/globalwordnet/english-wordnet).
+See also [oewntk](https://github.com/oewntk) and [globalwordnet/english-wordnet](https://github.com/globalwordnet/english-wordnet).
 
 ## Dataflow
 
@@ -43,7 +43,7 @@ grinds the WNDB database
 
 ## Maven Central
 
-		<groupId>io.github.x-englishwordnet</groupId>
+		<groupId>io.github.oewntk</groupId>
 		<artifactId>wndb2wndb</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 
