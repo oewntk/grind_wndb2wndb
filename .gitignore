@@ -6,3 +6,4 @@
 **/_*
 #**/*.jar
 /dependency-reduced-pom.xml
+/oewn-grind-wndb2wndb.jar
