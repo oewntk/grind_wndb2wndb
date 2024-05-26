@@ -1,9 +1,8 @@
 /target/
-
+/build/
 /wndb*/
 /wndb*
 **/_*/
 **/_*
-#**/*.jar
 /dependency-reduced-pom.xml
 /oewn-grind-wndb2wndb.jar
